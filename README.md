@@ -41,7 +41,9 @@
 (c)创建两个个方法：addWork、reduceWork根据对变量stuNum、courseNum的同时判断，来实现对不同学生选择不同的老师计数。  
 (d)创建一组打印方法：printAll、printTeacher、printTeacherAll、printStudent、printStudentAll、printCourse、printCourseAll进行信息的打印。  
 (e)最后在主方法中建立一个循环：能够保持选课系统持续存在，方便多次选课。接受第一次数据输入，调用judge（）方法开始进行选课。选课完毕，调用printAll（）方法打印信息。
-## 五、核心代码  
+## 五、流程图
+
+## 六、核心代码  
 1、代码一：类名为Student/Teacher/Course/People/Test_courseChoosesys，这五类。然后创建属性和构造方法。以下代码为例子：
 ```
 public Student(int number,String name,String sex,String id,int course)
@@ -180,8 +182,7 @@ public static void printAll() {
 		System.out.println(""+stu2.getNum()+"  "+stu2.getStudentName()+"  "+stu2.getSex()+"   "+stu2.getStudentId()+"   "+stu2.getCourses());
 		......}
 ```
-## 六、运行结果  
-
-
-## 七、实验感受  
+## 七、运行结果  
+![实验结果.jpg](https://i.loli.net/2020/10/25/jQmlNwu5WFDVo4n.jpg)  
+## 八、实验感受  
 本次实验主要是初步了解分析系统需求，从学生选课角度了解系统中的实体及其关系，能够学会定义类中的属性以及方法并且掌握面向对象的类设计方法、继承用法，构造方法实例化对象。
