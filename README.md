@@ -42,7 +42,7 @@
 (d)创建一组打印方法：printAll、printTeacher、printTeacherAll、printStudent、printStudentAll、printCourse、printCourseAll进行信息的打印。  
 (e)最后在主方法中建立一个循环：能够保持选课系统持续存在，方便多次选课。接受第一次数据输入，调用judge（）方法开始进行选课。选课完毕，调用printAll（）方法打印信息。
 ## 五、流程图
-
+![流程图.png](https://i.loli.net/2020/10/25/yz6XmetdriOjqAR.png)
 ## 六、核心代码  
 1、代码一：类名为Student/Teacher/Course/People/Test_courseChoosesys，这五类。然后创建属性和构造方法。以下代码为例子：
 ```
