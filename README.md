@@ -85,13 +85,103 @@ People(){}
 People(String id[],String name){}
 ......
 ```
-4、代码四：
+4、代码四：利用循环结构获取和记录学生信息，并且打印。
+```
+for(;;) {printStudentAll();
+	Scanner reader = new Scanner(System.in);
+	int x =reader.nextInt();
+	stuNum=x;
+	judgeStu(x);
+	printAll();
+		}
+```
+5、代码五：选择学生，并判断其是否选课或退课。
+```
+ublic static void judgeStu(int Num) {
+		Scanner reader = new Scanner(System.in);
+		printStudent(stuNum);
+		System.out.println("1.选课\n2.退课");
+		int y =reader.nextInt();
+		if(Num==1)
+			judgeChoose(y);
+		if(Num==2)
+			judgeChoose(y);
+		if(Num==3)
+			judgeChoose(y);
+	}
+```  
+6、代码六：确定退课或选课，并选择其课程编号输出。
+```
+public static void judgeChoose(int Num) {
+		Scanner reader = new Scanner(System.in);
+		printCourseAll();
+		int z =reader.nextInt();
+		courseNum=z;
+		if(Num==1){
+			courseChoose(z);
+		    addWork(stuNum,courseNum);
+		    }
+		if(Num==2){
+			courseChoose(z);
+		    reduceWork(stuNum,courseNum);
+		    }
+	}
+```  
+7、代码七：循环结构为框架，选择课程并打印其授课教师信息。
+```  
+public static void courseChoose(int Num) {
+		Scanner reader = new Scanner(System.in);
+		if(Num==1) {
+			printTeacher(1);
+		    }
+		if(Num==2) {
+			printTeacher(2);
+			}
+	}
+	public static void informationSure(int Num) {
+		System.out.println("1.确认\n2.返回");
+		if(Num==1) {}
+		else if(Num==2) {};
+	}
+```  
+8、代码八：利用循环结构统计选课学生人数及学生所选课程数。
+```
+public static void addWork(int stuNum,int courseNum) {
+		if (stuNum==1 && courseNum==1) {
+		cou0.addStuNum(cou0.getStuNum());
+		stu0.addCourses(stu0.getCourses());
+		}
+		else if (stuNum==1 && courseNum==2) {
+		cou1.addStuNum(cou1.getStuNum());
+		stu0.addCourses(stu0.getCourses());
+		}
+		......}
 ```
 ```
-5、代码五：
+public static void reduceWork(int stuNum,int courseNum) {
+		if (stuNum==1 && courseNum==1) {
+		cou0.reduceStuNum(cou0.getStuNum());
+		stu0.reduceCourses(stu0.getCourses());
+		}
+		else if (stuNum==1 && courseNum==2) {
+		cou1.reduceStuNum(cou1.getStuNum());
+		stu0.reduceCourses(stu0.getCourses());
+		}
+		......}
+```  
+9、代码九：打印选课结果，包括学生信息，教师信息，课程信息。以下为学生信息的例子。
 ```
+public static void printAll() {
+		System.out.println("<学生选课系统>");
+		System.out.println("<学生信息>");
+		System.out.println("编号  姓名    性别       学号        已选课程数");
+		System.out.println(""+stu0.getNum()+"  "+stu0.getStudentName()+"  "+stu0.getSex()+"   "+stu0.getStudentId()+"   "+stu0.getCourses());
+		System.out.println(""+stu1.getNum()+"  "+stu1.getStudentName()+"  "+stu1.getSex()+"  "+stu1.getStudentId()+"   "+stu1.getCourses());
+		System.out.println(""+stu2.getNum()+"  "+stu2.getStudentName()+"  "+stu2.getSex()+"   "+stu2.getStudentId()+"   "+stu2.getCourses());
+		......}
 ```
-## 六、运行结果
+## 六、运行结果  
+
 
 ## 七、实验感受  
 本次实验主要是初步了解分析系统需求，从学生选课角度了解系统中的实体及其关系，能够学会定义类中的属性以及方法并且掌握面向对象的类设计方法、继承用法，构造方法实例化对象。
